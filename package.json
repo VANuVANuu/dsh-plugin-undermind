@@ -1,0 +1,48 @@
+{
+  "name": "dsh-plugin-undermind",
+  "version": "0.1.0",
+  "description": "Undermind literature search inside DeepSeek Harness: self-managed OAuth/PKCE login and token refresh, with Undermind's MCP tools registered as mcp__undermind__*.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "harness",
+    "undermind",
+    "mcp",
+    "oauth",
+    "literature-search",
+    "research",
+    "papers"
+  ],
+  "license": "MIT",
+  "author": "VANuVANuu",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VANuVANuu/dsh-plugin-undermind.git"
+  },
+  "homepage": "https://github.com/VANuVANuu/dsh-plugin-undermind#readme",
+  "bugs": {
+    "url": "https://github.com/VANuVANuu/dsh-plugin-undermind/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.3 <0.3.0-0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.5",
+    "@deepseek-ai/schemastery": "^3.18.5"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
